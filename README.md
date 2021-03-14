@@ -11,7 +11,7 @@
 |    IIT2019189  |  Nidhi Kamewar | Nidhikamewar15  |
 |    IIT2019225  |  Kishan Tripathi             |                 | 
 |    IIT2019226  |  Mukul Mohmare |   |
-|    IIT2019237  |  Ishneet Sethi |  |
+|    IIT2019237  |  Ishneet Sethi |  ishneet890
 
 
 
