@@ -11,5 +11,5 @@
 
 **Project No :** 28
 
-** Design a web based temperature monitoring system for smart buildings that can collect building temperature on an hourly basis and calculate the minimum and maximum temperature.(The minimum number of days should be one month). **
+**Design a web based temperature monitoring system for smart buildings that can collect building temperature on an hourly basis and calculate the minimum and maximum temperature.(The minimum number of days should be one month).**
 
