@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>SOE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="background-image: url('images/pic3.jpg');">
+    <center>
+    <div class="heading">
+      <h1>Temperature Monitoring System</h1>
+    </div>
+
+    <div class="main">
+    <form class="" action="/" method="post">
+      <label class="label1">Building Name</label>
+      <input class="input1" type="text" name="buildingName" value="">
+      <br><br>
+      <label class="label2">Location</label>
+      <input class="input2" type="text" name="buildingLocation" value="">
+      <br><br>
+      <label class="label3">Start Date</label>
+      <input class="input3" type="date" name="startDate" value=" ">
+      <br><br>
+      <label class="label4">End Date</label>
+      <input class="input4" type="date" name="endDate" value="">
+      <br><br>
+      <!-- <a href="http://localhost:3000/display"> -->
+        <button class="btn" type="submit" name="button" id="getTemp">Display</button>
+      <!-- </a>  -->
+    </form>
+    </div>
+
+    </center>
+    <script src="app.js">
+    </script>
+  </body>
+</html>

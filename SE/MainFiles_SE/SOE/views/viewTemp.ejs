@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Display Page</title>
+        <!-- CSS  -->
+        <link rel="stylesheet" href="display.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+        <!-- Bootstrap cdn -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      </head>
+
+      <body style="background-image: url('images/pic3.jpg');">
+
+      <section id="sec-1">
+
+          <!-- Building name and address -->
+          <div class="building_name">
+               <h1 id="buildName"> <%= name %> </h1>
+               <h3 id="buildLocation"> <%= location %> </h3>
+          </div>
+
+
+          <!-- Dates user specified -->
+          <div class="forDates">
+            <h4 id="fromTo">From <%= fromDate %> to <%= toDate %> </h4>
+          </div>
+
+
+          <!-- Div's displaying max/min temperature -->
+          <div class="divsCombine">
+            <div class="zoom location1">
+              <div class="maxIn">
+                <h1 id="headingSize">Maximum Temperature</h1>
+                <h1 id="tempContent"><%= maxT %></h1>
+                <h2 id="tempUnit"> Degrees </h2>
+              </div>
+            </div>
+            <div class="zoom location2">
+              <div class="maxIn">
+                  <h1 id="headingSize">Minimum Temperature</h1>
+                  <h1 id="tempContent"><%= minT %></h1>
+                  <h2 id="tempUnit"> Degrees </h2>
+              </div>
+            </div>
+          </div>
+
+          <a href="#sec-2">
+             <div class="scroll-down"></div>
+          </a>
+
+      </section>
+
+      <script src="https://cdn.zoomcharts-cloud.com/1/latest/zoomcharts.js"></script>
+
+      <section id="sec-2">
+
+        <div class="forDates1">
+          <h2>Hourly Temperatures - Graph</h2>
+        </div>
+
+       <content>
+          <div id="demo"></div>
+       </content>
+
+       <div class="forDates2">
+         <h2>Day Wise Minimum and Maximum Temperatures - Graph</h2>
+       </div>
+
+       <div class="container bgC">
+          <canvas id="myChart" width="320" height="170"></canvas>
+       </div>
+
+      </section>
+
+          <script>
+
+          var myChart = document.getElementById('myChart').getContext('2d');
+
+             Chart.defaults.font.size = 18;
+             var da = '<%= dateArray %>'.split(",")
+             var sda = []
+             for (var i=0; i<da.length; i++){
+               let month = new Date(da[i]).toLocaleDateString('default', {month: 'long' })
+               let day = new Date(da[i]).getDate()
+               let year = new Date(da[i]).getFullYear()
+               sda.push(month+" "+day+", "+year)
+             }
+             console.log(sda)
+
+
+
+             var tempChart = new Chart(myChart, {
+               type: 'line',
+               options: {
+                scales: {
+      xAxes: [{
+        type: 'time'
+      }]
+    },
+                 plugins: {
+                     title: {
+                       display: true,
+                       fontSize: 25
+                     },
+                     legend: {
+                       display: true,
+                       position: 'right',
+                       labels: {
+                         fontColor: '#000'
+                       }
+                     },
+                 }
+             },
+               data: {
+                 labels: sda,
+                //  labels: ['Mar 1','Mar 2','Mar 3','Mar 4','Mar 5','Mar 6',' Mar 7','Mar 8','Mar 9','Mar 10','Mar 11','Mar 12','Mar 13','Mar 14','Mar 15','Mar 16',' Mar 17','Mar 18','Mar 19','Mar 20','Mar 21','Mar 22','Mar 23','Mar 24','Mar 25','Mar 26',' Mar 27','Mar 28','Mar 29','Mar 30','Mar 31','Apr 1','Apr 2','Apr 3','Apr 4','Apr 5','Apr 6','Apr 7'],  //x-axis
+                  datasets: [
+                 {
+                   label: 'Maximum Temperature',
+                   data: [<%= maxArr %>],
+                   fill: false,
+                   borderColor: 'rgb(75, 192, 192)',
+                   tension: 0.1
+                 },
+                 {
+                 label: 'Minimum Temperature',
+                 data: [<%= minArr %>],
+                 fill: false,
+                 borderColor: 'red',
+                 tension: 0.1
+                 }
+             ]
+               }
+             });
+
+
+
+            var pumpArr = [<%= pumpkin.arr %>];
+            var npa = []
+            for (var i=0; i<pumpArr.length; i+=2){
+              npa.push([pumpArr[i], pumpArr[i+1]])
+            }
+            //print(npa)
+            console.log(pumpArr)
+            var t = new TimeChart(
+            {
+                container: document.getElementById("demo"),
+                navigation:{
+                    initialDisplayPeriod:"1349136000000 > 1364342400000",
+                    initialDisplayUnit: "1 h"
+                },
+                data:
+                {
+                    units:["h"],
+                    preloaded: {"unit":"h","values":npa},
+                },
+                valueAxisDefault: {
+                    title:"Temperature"
+                },
+                valueAxis:{
+                    "v1":{
+                        enabled: false,
+                        minValue: 0,
+                        maxValue: 1
+                    }
+                },
+                series:[
+                    {
+                        name:"Temperature",
+                        id:"temp",
+                        type:"line",
+                        data:{
+                            index:1,
+                            aggregation:"avg"
+                        },
+                        style:{
+                            lineColor:"green",
+                            lineWidth: 1
+                        }
+                    },
+                ]
+            }
+    );
+
+          </script>
+
+      </body>
+    </html>

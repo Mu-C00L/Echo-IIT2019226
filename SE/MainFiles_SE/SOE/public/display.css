@@ -1,0 +1,204 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+}
+
+.building_name{
+  background-color: rgb(0,0,0,0.6);
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: white;
+  top: 30px;
+  padding-top: 10px;
+}
+
+#headingSize{
+  font-size: 33px;
+}
+
+#buildName{
+  font-size: 53px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+#buildLocation{
+  font-size: 22px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.forDates{
+  background-color: rgb(0,0,0,0.1);
+  font-family: 'Kiwi Maru', serif;
+  border-radius: 5px;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  color: black;
+  padding-bottom: 0px;
+  font-size: 20px;
+  margin-left: 510px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.forDates1{
+  background-color: rgb(0,0,0,0.1);
+  font-family: 'Kiwi Maru', serif;
+  border-radius: 5px;
+  width: 60%;
+  height: 45px;
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+  font-size: 25px;
+  margin-left: 310px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.forDates2{
+  background-color: rgb(0,0,0,0.1);
+  font-family: 'Kiwi Maru', serif;
+  border-radius: 5px;
+  width: 60%;
+  height: 45px;
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+  font-size: 25px;
+  margin-left: 310px;
+  margin-top: 230px;
+  margin-bottom: 30px;
+}
+
+#fromTo{
+  position: relative;
+  bottom: -2px;
+}
+
+.location1{
+  position: relative;
+  right: 340px;
+  top: 140px;
+}
+
+.location2{
+  position: relative;
+  right: -270px;
+  top: -160px;
+}
+
+.maxIn{
+  position: relative;
+  top: 7px;
+}
+
+.zoom {
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  padding: 40px;
+  transition: transform .2s; /* Animation */
+  width: 450px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: rgb(0,0,0,0.4);
+  /* width: 600px;
+  height: 480px; */
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+#tempContent{
+  font-family: 'Kiwi Maru', serif;
+  font-weight: lighter;
+  font-size: 75px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: -5px;
+  padding-bottom: 0px;
+}
+#tempUnit{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.scroll-down{
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 47%;
+  bottom: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+.bgC{
+  background-color: aliceblue ;
+  margin: 90px;
+  border-radius: 10px;
+  position: relative;
+  top: 30px;
+}
+#demo{
+  background-color: aliceblue;
+  width: 320;
+  height: 170;
+  margin: 90px;
+}
+
+/* #sec-2{
+  position: relative;
+  top: 100px;
+} */
