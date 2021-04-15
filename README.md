@@ -9,8 +9,10 @@
 |  Enrollment No |   Name         | GithubId        |
  --------------  |   ----         | --------        |
 |    IIT2019189  |  Nidhi Kamewar | Nidhikamewar15  |
-|    IIT2019225  |  Kishan Tripathi             |                 | 
-|    IIT2019226  |  Mukul Mohmare |   |
+|    IIT2019225  |  Kishan Tripathi             |     GhostFoxSledgehammer
+/
+            | 
+|    IIT2019226  |  Mukul Mohmare |  Mu-C00L |
 |    IIT2019237  |  Ishneet Sethi |  ishneet890
 
 
