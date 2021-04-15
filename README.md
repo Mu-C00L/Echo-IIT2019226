@@ -26,6 +26,13 @@
 
 **Design a web based temperature monitoring system for smart buildings that can collect building temperature on an hourly basis and calculate the minimum and maximum temperature.(The minimum number of days should be one month).**
 
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img1.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img2.jpeg"></td>
+  </tr>
+ </table>
+
 ## Team Members
 |  Enrollment No |   Name         | GithubId        |
  --------------  |   ----         | --------        |
@@ -35,6 +42,12 @@
 |    IIT2019237  |  Ishneet Sethi |  [ishneet890](https://github.com/ishneet890)
 
 ## Built With
+<li>
+  <ul>HTML</ul>
+  <ul>CSS</ul>
+  <ul>Javascript</ul>
+  <ul>MongoDB</ul>
+</li>
 
 ## Run the project
 
