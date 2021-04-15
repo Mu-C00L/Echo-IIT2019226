@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');//to parse the information received from the forms.
 const http = require('http');
 const { pseudoRandomBytes } = require('crypto');
 
@@ -11,7 +11,7 @@ app.use(express.static("public"));
 var minArr = [];
 var maxArr = [];
 
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 var dates = {
     convert:function(d) {
         // Converts the date in d to a date-object. The input can be:
