@@ -49,8 +49,6 @@
   <li>MongoDB</li>
 </ul>
 
-## Run the project
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
