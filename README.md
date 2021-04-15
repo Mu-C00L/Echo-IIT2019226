@@ -42,12 +42,12 @@
 |    IIT2019237  |  Ishneet Sethi |  [ishneet890](https://github.com/ishneet890)
 
 ## Built With
-<li>
-  <ul>HTML</ul>
-  <ul>CSS</ul>
-  <ul>Javascript</ul>
-  <ul>MongoDB</ul>
-</li>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>MongoDB</li>
+</ul>
 
 ## Run the project
 
