@@ -31,6 +31,10 @@
     <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img1.jpeg"></td>
     <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img2.jpeg"></td>
   </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img3.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img4.jpeg"></td>
+  </tr>
  </table>
 
 ## Team Members
