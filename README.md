@@ -1,11 +1,32 @@
 # Echo-IIT2019226
-
-
 **Project No :** 28
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li><a href="#team-members">Team Members</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+## About The Project
 
 **Design a web based temperature monitoring system for smart buildings that can collect building temperature on an hourly basis and calculate the minimum and maximum temperature.(The minimum number of days should be one month).**
 
-**Team Members**
+## Team Members
 |  Enrollment No |   Name         | GithubId        |
  --------------  |   ----         | --------        |
 |    IIT2019189  |  Nidhi Kamewar | [Nidhikamewar15](https://github.com/Nidhikamewar15)  |
@@ -13,5 +34,39 @@
 |    IIT2019226  |  Mukul Mohmare |  [Mu-C00L](https://github.com/Mu-C00L) |
 |    IIT2019237  |  Ishneet Sethi |  [ishneet890](https://github.com/ishneet890)
 
+## Built With
 
+## Run the project
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Mu-C00L/Echo-IIT2019226.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+<!-- Usage -->
+## Usage
+
+<!-- Acknowledgements -->
+## Acknowledgements
 
