@@ -46,6 +46,7 @@
   <li>HTML</li>
   <li>CSS</li>
   <li>Javascript</li>
+  <li>Nodejs</li>
   <li>MongoDB</li>
 </ul>
 
