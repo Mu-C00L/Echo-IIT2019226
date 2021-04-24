@@ -3,6 +3,9 @@ const app = express();
 const bodyParser = require('body-parser');//to parse the information received from the forms.
 const http = require('http');
 const { pseudoRandomBytes } = require('crypto');
+var nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine','ejs');
@@ -120,7 +123,7 @@ app.post("/", function(req,res){
 
          // minArr.push(minTemp);
          // maxArr.push(maxTemp);
-
+         var maxDate,minDate,idxMax,idxMin;
          if(dates.compare(dateCheck,fromDate)>=0 && dates.compare(dateCheck,toDate)<=0){
             //var dateC = new Date(dateCheck);
            //var dateC = new Date(dateCheck);
@@ -130,12 +133,14 @@ app.post("/", function(req,res){
            maxArr.push(maxTemp);
           //  console.log(dateCheck)
 
-           if(maxTemp > maxTempTillNow){
-             maxTempTillNow = maxTemp;
-           }
-           if(minTemp < minTempTillNow){
-             minTempTillNow = minTemp;
-           }
+          if(maxTemp > maxTempTillNow){
+            maxTempTillNow = maxTemp;
+            maxDate = dateCheck;
+          }
+          if(minTemp < minTempTillNow){
+            minTempTillNow = minTemp;
+            minDate = dateCheck;
+          }
 
 
             //console.log(dateI)
@@ -151,6 +156,51 @@ app.post("/", function(req,res){
             }
          }
 
+         if(dateCheck===maxDate){
+                   for(var j=0;j<24;j++){
+                     var currTemp = tempData.buildingTempRecords[i].temperature[j];
+                     if(maxTempTillNow==currTemp){
+                       idxMax = j;
+                     }
+
+                 }
+               }
+
+         if(dateCheck===minDate){
+                 for(var j=0;j<24;j++){
+                   var currTemp = tempData.buildingTempRecords[i].temperature[j];
+                   if(minTempTillNow==currTemp){
+                     idxMin = j;
+                   }
+               }
+             }
+
+      }
+
+      if(maxTempTillNow >= 45.8){
+      var transporter = nodemailer.createTransport(smtpTransport({
+        service: 'gmail',
+        host: 'smtp.gmail.com',
+        auth: {
+          user: 'nidhikamewar1506@gmail.com',
+          pass: 'mmqzcwksvmrpcwzr'
+        }
+      }));
+
+      var mailOptions = {
+        from: 'nidhikamewar1506@gmail.com',
+        to: 'iit2019189@iiita.ac.in',
+        subject: 'Sudden Temperature Rise Observed!',
+        text: 'Hey, a sudden temperature rise has been detected in your Apartment.Kindly take immediate actions.'
+      };
+
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
       }
 
       //console.log(pumpkin)
@@ -168,11 +218,16 @@ app.post("/", function(req,res){
            location: location,
            maxArr: maxArr,
            minArr: minArr,
-           dateArray: dateArray
+           dateArray: dateArray,
+           maxDate: maxDate,
+           minDate: minDate,
+           idxMax: idxMax,
+           idxMin: idxMin
          });
     })
   })
 });
+
 
 app.listen(3000, function(){
   console.log("Server is running on port 3000!");

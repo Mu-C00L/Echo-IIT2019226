@@ -81,6 +81,23 @@
 
       </section>
 
+      <div class="divsCombine">
+        <div class="zoom location1 randomClass">
+          <div class="extraClass">
+            <h1 id="headingSize">Maximum temperature recorded is on <%= maxDate %> </h1>
+            <h1 id="tempContent"> At </h1>
+            <h2 id="tempUnit"> <%= idxMax %>:00 hr </h2>
+          </div>
+        </div>
+        <div class="zoom location2 randomClass">
+          <div class="extraClass">
+              <h1 id="headingSize">Minimum temperature recorded is on <%= minDate %> </h1>
+              <h1 id="tempContent">At</h1>
+              <h2 id="tempUnit"> <%= idxMin %>:00 hr</h2>
+          </div>
+        </div>
+      </div>
+
           <script>
 
           var myChart = document.getElementById('myChart').getContext('2d');
