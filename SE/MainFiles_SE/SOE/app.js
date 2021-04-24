@@ -182,14 +182,14 @@ app.post("/", function(req,res){
         service: 'gmail',
         host: 'smtp.gmail.com',
         auth: {
-          user: 'nidhikamewar1506@gmail.com',
-          pass: 'mmqzcwksvmrpcwzr'
+          user: 'sender@gmail.com',
+          pass: 'authenticatedPassword'
         }
       }));
 
       var mailOptions = {
-        from: 'nidhikamewar1506@gmail.com',
-        to: 'iit2019189@iiita.ac.in',
+        from: 'sender@gmail.com',
+        to: 'receiver@gmail.com',
         subject: 'Sudden Temperature Rise Observed!',
         text: 'Hey, a sudden temperature rise has been detected in your Apartment.Kindly take immediate actions.'
       };
