@@ -82,12 +82,12 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- Usage -->
 ## Usage
-<li><h3>Heating,Ventilation and Air-Conditioning</h3></li>
+<li><h3>Heating,Ventilation and Air-Conditioning</h3>
 Controls heating, ventilation and air conditioning, thereby providing a comfortable environment for occupants ‘n’ improve energy efficiency.<br>
-<li><h3>Healthcare</h3></li>
+<h3>Healthcare</h3>
 Monitors temperatures of fridges and freezers, blood banks, operating theatres, medicines, and medical devices and equipment.<br>
-<li><h3>Information Technology</h3></li>
-The ambient temperature of the server room should be maintained between 18-27°C
+<h3>Information Technology</h3>
+The ambient temperature of the server room should be maintained between 18-27°C</li>
 
 
 <!-- Acknowledgements -->
