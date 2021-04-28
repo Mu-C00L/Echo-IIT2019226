@@ -101,4 +101,7 @@ The ambient temperature of the server room should be maintained between 18-27°C
 
 <!-- Acknowledgements -->
 ## Acknowledgements
-
+* [Sending an email using NodeMailer & Gmail](https://codeburst.io/sending-an-email-using-nodemailer-gmail-7cfa0712a799)
+* [MongoDB - Deployment](https://www.tutorialspoint.com/mongodb/mongodb_deployment.htm)
+* [Deploy Node.js / MongoDB app using Heroku](https://medium.com/make-school/how-to-deploy-your-node-js-mongodb-app-to-the-web-using-heroku-63d4bccf2675)
+* [Connect to a MongoDB Database Using Node.js](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database)
