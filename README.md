@@ -75,11 +75,20 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/Mu-C00L/Echo-IIT2019226.git
    ```
-2. Install NPM packages
+2. Change directory to main file
+   ```sh
+   cd SE/MainFiles_SE/SOE
+   ```
+3. Install NPM packages and dependencies
    ```sh
    npm install
    ```
-
+4. Run the project
+   ```sh
+   npm start
+   ```
+   
+   
 <!-- Usage -->
 ## Usage
 <ul><h5>Heating,Ventilation and Air-Conditioning</h5>
