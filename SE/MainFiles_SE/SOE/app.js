@@ -69,8 +69,8 @@ var dates = {
 ////////////////////////////////////////////////////////////////////////////////
 
 app.get("/", function(req,res){
- // res.sendFile(__dirname + "/index.html");
-    res.render('homepage');
+   res.sendFile(__dirname + "/index.html");
+  //  res.render('homepage');
 });
 
 app.post("/", function(req,res){
