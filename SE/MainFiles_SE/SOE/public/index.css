@@ -24,7 +24,7 @@ h1{
 }
 
 .main{
-  background-color: rgb(0,0,0,0.3);
+  background-color: rgb(0,0,0,0.55);
   width: 600px;
   height: 480px;
   text-align: center;
@@ -130,6 +130,6 @@ form{
 
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: #707070;
+  background-color: #f44336;
   color: white;
 }

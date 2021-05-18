@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="home.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white header">
+    <nav>
+      <!-- <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        Logo
+      </div> -->
+      <div class="nav-links">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="#overview">ABOUT US</a></li>
+          <li><a href="#building-section">BUILDING PARTNERS</a></li>
+          <li><a href="#services">SERVICES</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Temperature Monitoring</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:50%">
+    <br>
+    <p class="w3-large w3-center">An effortless way to monitor temperature allowing you to maintain optimum conditions and improve efficiency.</p>
+    <button type="button" name="button" class="but danger btn-lg home-btn" id="home-button">Get started</button>
+  </div>
+</div>
+
+
+<!-- Overview of project -->
+<section class="overview_1" id="overview">
+ <div class="about-us">
+    <h1 class="build-head-1">ABOUT US</h1>
+    <div class="skill-row">
+      <img class="me2" src="images/thermometer.svg" alt="webd-img">
+      <p class="font-class">Our website can collect building temperature on an hourly basis and displays minimum and maximum temperaures as per user's need.</p>
+    </div>
+    <br>
+    <div class="skill-row">
+      <img class="me3" src="images/diagram.svg" alt="Nidhi">
+      <p class="font-class">Graphs will help you analyse temperature variations on hourly as well as per day basis.</p>
+    </div>
+</div>
+</section>
+
+
+<!-- Buildings associated  -->
+<section class="buildings" id="building-section">
+  <h1 class="build-head-2">ASSOCIATED BUILDINGS</h1>
+  <div class="row">
+    <div class="building-col">
+      <img src="images/london.png" alt="">
+      <div class="layer">
+        <h3>Royal Castle</h3>
+      </div>
+    </div>
+    <div class="building-col">
+      <img src="images/newyork.png" alt="">
+      <div class="layer">
+        <h3>Heritage Luxury</h3>
+      </div>
+    </div>
+    <div class="building-col">
+      <img src="images/washington.png" alt="">
+      <div class="layer">
+        <h3>Argus Homes</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-heading build-head-2 text-uppercase">Services</h1>
+            <h3 class="service-text">Some of the services we offer</h3>
+            <br>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-user-plus fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Hourly display of temp</h4>
+                <p class="text-muted">Get the hourly temp by having a glance at the graphs.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Online</h4>
+                <p class="text-muted">Get temperature updates of your apartment at the comfort of your home</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-info fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Track Status</h4>
+                <p class="text-muted">Track and monitor the current status of your grievance at any time</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br><br><br>
+
+
+<!-- Footer section -->
+<section class="footer">
+   <h4>Temperature Monitoring System</h4>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   <p>Copyright Temperature Monitoring</p>
+</section>
+
+<script>
+   const id= document.getElementById('home-button');
+   id.addEventListener('click',function(){
+     window.location = '/index';
+   })
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

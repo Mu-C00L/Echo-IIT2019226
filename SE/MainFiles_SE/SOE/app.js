@@ -69,9 +69,11 @@ var dates = {
 ////////////////////////////////////////////////////////////////////////////////
 
 app.get("/", function(req,res){
-   res.sendFile(__dirname + "/index.html");
-  //  res.render('homepage');
+  res.sendFile(__dirname + "/home.html");
 });
+app.get("/index",async function(req,res){
+  res.sendFile(__dirname + "/index.html");
+})
 
 app.post("/", function(req,res){
   var name = req.body.buildingName;
@@ -122,17 +124,11 @@ app.post("/", function(req,res){
          var minTemp = tempData.buildingTempRecords[i].min;
          var maxTemp = tempData.buildingTempRecords[i].max;
 
-         // minArr.push(minTemp);
-         // maxArr.push(maxTemp);
          var maxDate,minDate,idxMax,idxMin;
          if(dates.compare(dateCheck,fromDate)>=0 && dates.compare(dateCheck,toDate)<=0){
-            //var dateC = new Date(dateCheck);
-           //var dateC = new Date(dateCheck);
-
            dateArray.push([dateI]);
            minArr.push(minTemp);
            maxArr.push(maxTemp);
-          //  console.log(dateCheck)
 
           if(maxTemp > maxTempTillNow){
             maxTempTillNow = maxTemp;
@@ -143,17 +139,12 @@ app.post("/", function(req,res){
             minDate = dateCheck;
           }
 
-
-            //console.log(dateI)
-            //console.log(new Date(dateI).getTime())
             let start = new Date(dateI).getTime();
-
             pumpkinDay.push(start, maxTemp, minTemp)
 
             for (var j=0; j<24; j++){
               var pair = new Array([start+j*3600000, tempData.buildingTempRecords[i].temperature[j]])
               pumpkin.push(pair)
-              //console.log(pair);
             }
          }
 
@@ -163,7 +154,6 @@ app.post("/", function(req,res){
                      if(maxTempTillNow==currTemp){
                        idxMax = j;
                      }
-
                  }
                }
 
@@ -175,7 +165,6 @@ app.post("/", function(req,res){
                    }
                }
              }
-
       }
 
       if(maxTempTillNow >= 45.8){
@@ -204,9 +193,6 @@ app.post("/", function(req,res){
       });
       }
 
-      //console.log(pumpkin)
-      //console.log(dateArray)
-
          res.render("viewTemp",
          {
            pumpkin: {arr: new Array(pumpkin)},
@@ -225,10 +211,9 @@ app.post("/", function(req,res){
            idxMax: idxMax,
            idxMin: idxMin
          });
-    })
-  })
+      })
+   })
 });
-
 
 app.listen(3000, function(){
   console.log("Server is running on port 3000!");
