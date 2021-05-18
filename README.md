@@ -43,7 +43,7 @@
  </table>
 
 ## Team Members
-|  Enrollment No |   Name         | GithubId        |
+|  Enrollment No |   Name         | Github Id        |
  --------------  |   ----         | --------        |
 |    IIT2019189  |  Nidhi Kamewar | [Nidhikamewar15](https://github.com/Nidhikamewar15)  |
 |    IIT2019225  |  Kishan Tripathi  |     [GhostFoxSledgehammer](https://github.com/GhostFoxSledgehammer) | 
