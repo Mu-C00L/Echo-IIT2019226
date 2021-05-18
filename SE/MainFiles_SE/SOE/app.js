@@ -116,7 +116,7 @@ app.post("/", function(req,res){
       var pumpkin = new Array();
       var pumpkinDay = new Array();
 
-      for(var i=0;i<38;i++){
+      for(var i=0;i<tempData.count;i++){
          const dateI = tempData.buildingTempRecords[i].date;
 
          var dateCheck = new Date(dateI).toLocaleDateString("en-US");
