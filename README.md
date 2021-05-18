@@ -39,6 +39,9 @@
     <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic5.jpeg"></td>
     <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic6.jpeg"></td>
   </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic7.jpeg"></td>
+  </tr>
 
  </table>
 
