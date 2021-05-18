@@ -28,16 +28,16 @@
 
 <table>
   <tr>
-    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img1.jpeg"></td>
-    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img2.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic1.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic2.jpeg"></td>
   </tr>
   <tr>
-    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img3.jpeg"></td>
-    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/img4.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic3.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic4.jpeg"></td>
   </tr>
   <tr>
-    <td valign="top"><img src="https://user-images.githubusercontent.com/58396508/116656895-1878be00-a9ab-11eb-9f6e-ae7f5e4d4783.jpeg"></td>
-    <td valign="top"><img src="https://user-images.githubusercontent.com/58396508/116656897-19a9eb00-a9ab-11eb-9e2c-2b9e94259277.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic5.jpeg"></td>
+    <td valign="top"><img src="https://github.com/Mu-C00L/Echo-IIT2019226/blob/main/ProjectSS/Pic6.jpeg"></td>
   </tr>
 
  </table>
