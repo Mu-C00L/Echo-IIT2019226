@@ -172,8 +172,8 @@ app.post("/", function(req,res){
         service: 'gmail',
         host: 'smtp.gmail.com',
         auth: {
-          user: 'sender@gmail.com',
-          pass: 'authenticatedPassword'
+          user: 'sweproject123@gmail.com',
+          pass: 'Sweproject#890'
         }
       }));
 
