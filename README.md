@@ -99,7 +99,7 @@ This is an example of how to list things you need to use the software and how to
    
 <!-- Usage -->
 ## Usage
-<ul><h5>Heating,Ventilation Air-Conditioning</h5>
+<ul><h5>Heating,Ventilation and Air-Conditioning</h5>
 Controls heating, ventilation and air conditioning, thereby providing a comfortable environment for occupants ‘n’ improve energy efficiency.<br>
 <h5>Healthcare</h5>
 Monitors temperatures of fridges and freezers, blood banks, operating theatres, medicines, and medical devices and equipment.<br>
